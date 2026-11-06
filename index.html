@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Duna</title>
+<title>Shoot and Explode</title>
 <style>
 html,body{margin:0;height:100%;background:#07080c;overflow:hidden}
 body{display:flex;align-items:center;justify-content:center}
@@ -596,7 +596,7 @@ function drawCup(x,y,s){
 }
 function hud(){
   if(pain>0){ctx.fillStyle="rgba(255,36,28,0.38)";ctx.fillRect(0,0,W,H);}
-  txt("DUNA",4,4,"#ffe14a");
+  txt("SHOOT AND EXPLODE",4,4,"#ffe14a");
   txt("VIDA "+hp,4,12,"#fff");
   ctx.fillStyle="#2a1210";ctx.fillRect(4,19,52,4);
   ctx.fillStyle=hp<30?"#ff5040":"#e23a2a";ctx.fillRect(4,19,(52*hp/100)|0,4);
@@ -718,7 +718,7 @@ function frame(t){
 function drawMenu(){
   ctx.fillStyle="#8ec4f0";ctx.fillRect(0,0,W,H/2);
   ctx.fillStyle="#e6d2a0";ctx.fillRect(0,H/2,W,H/2);
-  center("DUNA",24,"#ffe14a",3);
+  center("SHOOT AND EXPLODE",24,"#ffe14a",3);
   center("1 NORMAL",68,"#fff",2);
   center("2 PESADILLA",92,"#ff7040",2);
   center("ELIGE UN MODO",124,"#ffe14a",1);
